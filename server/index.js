@@ -13,5 +13,5 @@ db.on('error',console.error.bind(console,'MondoDB connection error'));
 // app.get('/',(req,res)=>{
 //     res.send('Hello World');
 // })
-app.use('/',router);
+app.use('/api',router);
 app.listen(apiPort,()=>console.log(`Server running on port ${apiPort}`));
